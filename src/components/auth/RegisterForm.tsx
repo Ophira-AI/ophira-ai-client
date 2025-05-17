@@ -18,6 +18,7 @@ type FormData = {
 export default function RegisterForm() {
   const router = useRouter();
   const [emailExists, setEmailExists] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -27,7 +28,7 @@ export default function RegisterForm() {
   const onSubmit = (data: FormData) => {
     // Simulate API email check (replace with actual API call)
     const existingEmails = ["test@example.com", "hello@site.com"];
-
+    
     if (existingEmails.includes(data.email.toLowerCase())) {
       setEmailExists(true);
       return;
