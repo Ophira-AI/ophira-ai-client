@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-black ">{children}</body>
+      <body className="bg-primary ">{children}</body>
     </html>
   );
 }
